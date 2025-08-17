@@ -20,6 +20,10 @@ dependencies {
 	modImplementation libs.fapi
 }
 
+loom {
+	accessWidenerPath = file("src/main/resources/chorus_honey.accesswidener")
+}
+
 processResources {
 	final Map<String, String> meta = [
 		version       : version,

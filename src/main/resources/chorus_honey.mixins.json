@@ -4,6 +4,10 @@
 	"package": "io.github.hestimae.chorushoney.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+		"BrewingRecipeRegistryBuilderAccessor",
+		"BrewingRecipeRegistryMixin",
+		"BrewingStandScreenHandlerMixin",
+		"PotionSlotMixin"
 	],
 	"client": [
 	],

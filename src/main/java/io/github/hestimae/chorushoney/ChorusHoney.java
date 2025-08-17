@@ -23,13 +23,13 @@ public class ChorusHoney implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(ID);
 	public static final FoodComponent CHORUS_HONEY_BOTTLE_FOOD = new FoodComponent.Builder().nutrition(6).saturationModifier(0.1F).alwaysEdible().build();
 	public static final ConsumableComponent CHORUS_HONEY_BOTTLE_CONSUMABLE = drink().consumeSeconds(2.0F).sound(SoundEvents.ITEM_HONEY_BOTTLE_DRINK).consumeEffect(new RemoveEffectsConsumeEffect(StatusEffects.POISON)).build();
+	public static final ChorusHoneyBottleItem CHORUS_HONEY_BOTTLE_ITEM = Registry.register(Registries.ITEM, Identifier.of(ID, "chorus_honey_bottle"),
+		new ChorusHoneyBottleItem(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(ID, "chorus_honey_bottle"))).recipeRemainder(GLASS_BOTTLE)
+			.food(CHORUS_HONEY_BOTTLE_FOOD, CHORUS_HONEY_BOTTLE_CONSUMABLE)
+			.useRemainder(GLASS_BOTTLE).maxCount(16)));
 
 	@Override
 	public void onInitialize() {
-		Registry.register(Registries.ITEM, Identifier.of(ID, "chorus_honey_bottle"),
-			new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(ID, "chorus_honey_bottle"))).recipeRemainder(GLASS_BOTTLE)
-				.food(CHORUS_HONEY_BOTTLE_FOOD, CHORUS_HONEY_BOTTLE_CONSUMABLE)
-				.useRemainder(GLASS_BOTTLE).maxCount(16)));
 		LOGGER.info("[Chorus Honey] Bzzzzzz... Choruses ur honey");
 	}
 }
