@@ -1,2 +1,6 @@
 {
+	"block.chorus_honey.chorus_honey_block": "Chorus Honey Block",
+	"item.chorus_honey.chorus_honey_block": "Chorus Honey Block",
+	"item.chorus_honey.chorus_honey_bottle": "Chorus Honey Bottle",
+	"itemGroup.chorus_honey.items": "Chorus Honey"
 }

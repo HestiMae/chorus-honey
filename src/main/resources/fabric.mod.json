@@ -32,6 +32,7 @@
 			"io.github.hestimae.chorushoney.ChorusHoney"
 		],
 		"client": [
+			"io.github.hestimae.chorushoney.client.ChorusHoneyClient"
 		]
 	},
 	"accessWidener": "chorus_honey.accesswidener"
