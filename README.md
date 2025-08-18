@@ -18,7 +18,6 @@ Adds two items to the game:
 - Like honey, but flows up!
 - Airborne entities slide up the block on contact
 - Crafted with 4 chorus honey bottles
-`path/to/config/files` if you have them
 
 ---
 
